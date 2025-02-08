@@ -23,50 +23,19 @@
             color: #ff9800;
         }
 
-        /* Bibliography Section */
-        #bibliography {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px auto;
-            max-width: 800px;
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
         }
 
-        #bibliography li {
-            background-color: #1e1e1e;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 188, 212, 0.2);
-        }
-
-        #bibliography a {
-            color: #00bcd4;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        #bibliography a:hover {
-            text-decoration: underline;
-            color: #ff9800;
-        }
-
-        /* Upload Form */
-        form {
-            margin-top: 20px;
+        .button-column {
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.2);
-            display: inline-block;
-        }
-
-        input[type="file"] {
-            border: none;
-            background-color: #333;
-            padding: 10px;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
+            flex: 1;
+            margin: 0 10px;
         }
 
         button {
@@ -92,6 +61,21 @@
     
 
     <h2>Here is our bibliography</h2>
-    <button onclick="window.location.href='https://docs.google.com/document/d/1Yp_n_LipJrNn40AaNgwYAW9maeKYT7W3ugSdwB6wIog/edit?usp=sharing'">Go to Google Doc</button>
+    
+    <div class="button-container">
+        <div class="button-column">
+            <h2>Bibliography</h2>
+            <button onclick="window.location.href='https://docs.google.com/document/d/1Yp_n_LipJrNn40AaNgwYAW9maeKYT7W3ugSdwB6wIog/edit?usp=sharing'">Go to Google Doc</button>
+        </div>
+        <div class="button-column">
+            <h2>Thesis and Introduction</h2>
+            <button onclick="window.location.href='https://docs.google.com/document/d/your_thesis_doc_id/edit?usp=sharing'">Go to Google Doc</button>
+        </div>
+        <div class="button-column">
+            <h2>Simulation Experiment</h2>
+            <button onclick="window.location.href='https://github.com/ari1811/Ari-and-Justin-CSC-754/pages/experiment'">Go to GitHub Page</button>
+        </div>
+    </div>
+
 </body>
 </html>
