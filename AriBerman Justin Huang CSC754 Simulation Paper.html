@@ -4,86 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ari Berman and Justin Huang Report Progress</title>
-    <style>
-        /* General Page Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        h1 {
-            color: #00bcd4;
-        }
-
-        h2 {
-            color: #ff9800;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-
-        .button-column {
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(255, 152, 0, 0.2);
-            flex: 1;
-            margin: 0 10px;
-        }
-
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            border: none;
-            background-color: #ff9800;
-            color: white;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: #00bcd4;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-    </style>
 </head>
 <body>
-    <h1>Ari Berman and Justin Huang CSC 754 Term Project</h1>
+    <h1 id="home">Ari Berman and Justin Huang CSC 754 Term Project</h1>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#thesis">Thesis</a>
+        <a href="#bibliography">Bibliography</a>
+        <a href="#experiment">Experiment</a>
+    </div> 
     
     <div class="image-container">
         <img src="https://github.com/ari1811/Ari-and-Justin-CSC-754/raw/main/coronavirus-2.tmb-1920v.jpg" alt="Project Image">
     </div>
 
-    <div class="button-container">
+    <div id="thesis" class="container">
         <div class="button-column">
-            <h2>Bibliography</h2>
-            <button onclick="window.location.href='https://docs.google.com/document/d/1Yp_n_LipJrNn40AaNgwYAW9maeKYT7W3ugSdwB6wIog/edit?usp=sharing'">Go to Google Doc</button>
-        </div>
-        <div class="button-column">
-            <h2>Thesis and Introduction</h2>
-            <button onclick="window.location.href='https://docs.google.com/document/d/1oZ1VTdwh5zRJzSLZjpaQ5MV_8b6Mf4YGMiY8q0_ikTo/edit?tab=t.0#heading=h.t11itjvvkn8x'">Go to Google Doc</button>
-        </div>
-        <div class="button-column">
-            <h2>Simulation Experiment</h2>
-            <button onclick="window.location.href='https://github.com/ari1811/Ari-and-Justin-CSC-754/pages/experiment'">Go to GitHub Page</button>
+            <div class="thesis-title">
+                <h2>Thesis Statement</h2>
+            </div>
+            <div class="thesis-paragraph">
+                <p>This study aims to analyze the spread of three common viruses—Influenza, SARS-CoV-2, and Norovirus—within public transportation systems by simulating transmission dynamics. 
+                    Through modeling various factors such as passenger density, ventilation, and mitigation strategies, this research seeks to identify effective interventions to minimize 
+                    virus spread and enhance public health responses.
+                </p>
+            </div>
+            <div class="thesis-title">
+                <h2>Introductory Paragraph</h2>
+            </div>
+            <div class="thesis-paragraph">
+                <p>Public transportation plays a critical role in urban mobility, yet it also serves as a significant vector for the spread of infectious diseases. Enclosed spaces, high passenger 
+                    turnover, and shared surfaces create an environment where viruses can rapidly transmit, posing serious public health concerns. This study focuses on three common viruses—Influenza, 
+                    SARS-CoV-2, and Norovirus—to understand their transmission dynamics within buses, trains, and subways. By utilizing simulation-based approaches, this research examines how different 
+                    factors, including ventilation systems, passenger density, and intervention strategies, influence viral spread. The goal is to provide data-driven insights into effective mitigation 
+                    measures, such as improved air filtration, disinfection protocols, and policy recommendations, to reduce the risk of viral outbreaks in public transit systems.
+                </p>
+            </div>
         </div>
     </div>
 
+    <div id="bibliography" class="container">
+        <div class="button-column">
+            <div id="bibliography-title">
+                <h2>Bibliography</h2>
+            </div>
+            <div>
+                <div class="bibliography-section">
+                    <h3>Virus Transmission Dynamics in Public Transportation</h3>
+                </div>
+                <div id="bibliography-list-1">
+                    <ol>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8894738/" target="_blank">Transmission and Control of SARS-CoV-2 on Ground Public Transport</a></li>
+                        <li><a href="https://wwwnc.cdc.gov/eid/article/30/4/23-1299_article" target="_blank">Bus Riding as Amplification Mechanism for SARS-CoV-2 Transmission</a></li>
+                        <li>Risk of COVID-19 Infection in Public Transportation</li>
+                        <li>SARS-CoV-2 Seroprevalence in Those Utilizing Public Transportation or Working in the Transportation Industry</li>
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7165818/" target="_blank">Routes of transmission of influenza A H1N1, SARS CoV, and norovirus in air cabin</a></li>
+                        
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <div class="bibliography-section">
+                    <h3>Mitigation Strategies and Airflow Dynamics</h3>
+                </div>
+                <div id="bibliography-list-2">
+                    <ol start="6">
+                        <li>Reducing COVID-19 Airborne Transmission Risks on Public Transportation Buses</li>
+                        <li>COVID-19 Public Transportation Air Circulation and Virus Mitigation Study</li>
+                        <li>Global Research and Best Practices for Public Transit and COVID-19 Pandemic</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <div class="bibliography-section">
+                    <h3>Impact of Public Transportation on Virus Spread</h3>
+                </div>
+                <div id="bibliography-list-3">
+                    <ol start="9">
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8662904/" target="_blank">Investigating the Association Between Mass Transit Adoption and COVID-19 Infections</a></li>
+                        <li>Public Transport Planning Adaptation Under the COVID-19 Pandemic Crisis</li>
+                        <li>How Safe Is It to Travel on Public Transport Amid COVID-19?</li>
+                    </ol>
+                </div>
+                <div class="bibliography-section">
+                    <h3>Simulation and Modeling Studies</h3>
+                </div>
+                <div id="bibliography-list-4">
+                    <ol start="12">
+                        <li>Simulations Shed Insight on COVID-19 Transmission on a Public Bus</li>
+                        <li>Virus Transmission Risk in Urban Rail Systems</li>
+                        <li>Dynamic Model of Respiratory Infectious Disease Transmission in Public Transportation Systems</li>
+                    </ol>
+                </div>
+                <div class="bibliography-section">
+                    <h3>Case Studies and Empirical Research</h3>
+                </div>
+                <div id="bibliography-list-5">
+                    <ol start="15">
+                        <li>On Strategies to Help Reduce Contamination on Public Transit</li>
+                        <li>Demand for Mitigating the Risk of COVID-19 Infection in Public Transport</li>
+                        <li>Risk of COVID-19 Spread and Mitigation Strategies in Public Transportation Sector</li>
+                    </ol>
+                </div>
+                <div class="bibliography-section">
+                    <h3>Reviews and Meta-Analyses</h3>
+                </div>
+                <div id="bibliography-list-6">
+                    <ol start="18">
+                        <li>Transmission Mitigation Practices in Public Transportation</li>
+                        <li>Prevention and Control of COVID-19 in Public Transportation</li>
+                    </ol>
+                </div>
+                <div class="bibliography-section">
+                    <h3>Policy and Planning</h3>
+                </div>
+                <div id="bibliography-list-7">
+                    <ol start="20">
+                        <li><a href="https://en.wikipedia.org/wiki/Impact_of_the_COVID-19_pandemic_on_public_transport" target="_blank">Impact of the COVID-19 Pandemic on Public Transport</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experiment" class="container">
+        <div class="button-column">
+            <h2>Simulation Experiment</h2>
+            <button onclick="window.location.href='https://github.com/ari1811/Ari-and-Justin-CSC-754/pages/experiment'">Go to GitHub Page</button>
+    </div>   
+
+    <script src="script.js"></script>
 </body>
 </html>
