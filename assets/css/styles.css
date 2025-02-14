@@ -11,7 +11,7 @@ h1 {
     color: #00bcd4;
 }
 
-.thesis-title, #bibliography-title, .bibliography-section {
+.thesis-title, #bibliography-title, .bibliography-section, .simulation-section{
     color: #ff9800;
 }
 
@@ -88,8 +88,8 @@ button:hover {
 }
 
 .thesis-paragraph {
-    margin-left: 30%;
-    margin-right: 30%
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 a{
@@ -109,4 +109,13 @@ ol {
 
 li {
     padding-bottom: 10px; /* Add custom padding between number and text */
+}
+
+.comment{
+    margin: 0;
+    padding-left: 30px;
+}
+
+#bibliography-content{
+    text-align: left;
 }
