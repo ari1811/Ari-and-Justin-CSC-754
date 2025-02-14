@@ -102,13 +102,13 @@ a:hover{
 }
 
 ol {
-    list-style-position: inside; /* The numbers will be inside the list item */
+    list-style-position: inside; 
     padding-right: 50px;
 
 }
 
 li {
-    padding-bottom: 10px; /* Add custom padding between number and text */
+    padding-bottom: 5px; 
 }
 
 .comment{
@@ -118,4 +118,8 @@ li {
 
 #bibliography-content{
     text-align: left;
+}
+
+.source{
+    padding-bottom: 15px;
 }
