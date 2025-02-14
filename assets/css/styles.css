@@ -11,7 +11,7 @@ h1 {
     color: #00bcd4;
 }
 
-.thesis-title, #bibliography-title, .bibliography-section, .simulation-section{
+.thesis-title, #bibliography-title, .bibliography-section, .simulation-title{
     color: #ff9800;
 }
 
@@ -109,6 +109,7 @@ ol {
 
 li {
     padding-bottom: 5px; 
+    font-weight: bold;
 }
 
 .comment{
